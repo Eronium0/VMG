@@ -2,13 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root{
---white: #ffffff;
---black: #000000;
---grey: #696969;
+--pine: #1B5E38;
+--pine-dark: #123F25;
+--clay: #A6512E;
+--stucco: #F1EEE4;
+--stucco-dark: #E4DFCF;
+--charcoal: #262420;
+--concrete: #7C7A70;
+--line: #D8D2C0;
+--white:#fff;
 
---bg: var(--white);
+--bg: var(--stucco);
 --accent: var(--grey);
 --text: var(--black);
+--textalt: var(--white);
+--headbg: var(--pine);
 }
 
 
@@ -35,26 +43,99 @@ body{
     flex-direction: column;
 }
 
+.upper-container{
+    height: 8rem;
+    background-color: var(--stucco-dark);
+}
+
 .buttons{
     display: grid;
-    grid-template-columns: 6rem 6rem 6rem;
-    align-items: right;
-    justify-content: right;
+    grid-template-columns: 6rem 6rem 6rem 12rem;
     gap: 2rem;
-    top: 5rem;
-    position: relative;
-    width: 100%;
+    top: 3rem;
+    position: absolute;
+    right: 3rem;
 }
 
 .buttons a{
     text-decoration: none;
     color: var(--text);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: .9rem;
+    font-weight: 400;
     text-align: center;
     padding: .5rem;
     border-bottom: 2px solid var(--accent);
+    font-family: 'Be Vietnam Pro';
+}
+
+.text-container{
+    background-color: var(--headbg);
+    width: 25%;
+    height: 8rem;
+    position: absolute;
+    top: 0;
+    border-radius: 0rem 0rem 4rem 0rem;
+}
+
+.text-container h1{
     font-family: 'Lora';
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    color: var(--textalt);
+    font-weight: 600;
+}
+
+.text-container h2{
+    font-family: 'Be Vietnam Pro';
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-left: 2.5rem;
+    color: var(--textalt);
+    font-weight: 500;
+}
+
+.description{
+    position: absolute;
+    top: 10rem;
+/* background-color: #7C7A70; */
+    width: 100%;
+    height: 35rem;
+}
+
+.description h1{
+    font-family: 'Lora';
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-left: 12rem;
+    max-width: 20rem;
+    line-height: 4.5rem;
+}
+
+.description p{
+    font-family: 'Be Vietnam Pro';
+    font-size: 1rem;
+    margin-left: 12rem;
+    margin-top: 4rem;
+    max-width: 30rem;
+    color: var(--concrete);
+    line-height: 2rem;
+}
+
+.desc-estimate{
+    margin-left: 12rem;
+    background-color: var(--pine);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
 }
 
 body h1{
