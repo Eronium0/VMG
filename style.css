@@ -123,6 +123,7 @@ body{
     max-width: 30rem;
     color: var(--concrete);
     line-height: 2rem;
+    margin-bottom: 2rem;
 }
 
 .desc-estimate{
@@ -131,10 +132,10 @@ body{
     color: var(--white);
     border: none;
     cursor: pointer;
-    width: 12rem;
-    height: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem;
-    margin-top: 1rem;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro';
 }
 
 .desc-img{
@@ -157,14 +158,15 @@ body{
     font-family: 'Lora';
     font-size: 2rem;
     margin-left: 12rem;
-    margin-top: 4rem;
-
+    margin-top: 10rem;
     font-weight: 500;
-
+    border-bottom: 2px solid var(--pine);
+    height: 2.5rem;
+    width: 20rem;
 }
 
 .service-list{
-    border-top: 1px solid var(--charcoal);
+    border-top: 1px solid var(--concrete);
     margin-right: 10rem;    
     align-self: center;
     width: 40rem;
@@ -173,7 +175,7 @@ body{
 .service-item{
     display: grid;
     grid-template-rows: 3rem 4rem auto;
-    border-bottom: 1px solid var(--charcoal);
+    border-bottom: 1px solid var(--concrete);
 }
 
 .services h2{
